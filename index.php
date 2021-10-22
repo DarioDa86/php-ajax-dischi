@@ -21,25 +21,17 @@
         </header>
 
         <div class="container">
-
-        <?php foreach($database as $album) { ?>
-
-        <div class="image-album">
-            <img src="<?php echo $album['poster'];?>" alt="info.title">
-            <h4 class="name-album"><?php echo $album['title'];?></h4>
-            <div class="name-author">{{info.author}}</div>
-            <div class="year-album">{{info.year}}</div>
-        </div>
-
-        <?php }?>
-
+            <?php foreach($database as $album) { ?>
 
             <div class="album">
-                
-                <h4 class="name-album">{{info.title}}</h4>
-                <div class="name-author">{{info.author}}</div>
-                <div class="year-album">{{info.year}}</div>
-            </div>
+                <div class="image-album">
+                    <img src="<?php echo $album['poster'];?>" alt="info.title">
+                </div>
+                    <h4 class="name-album"><?php echo $album['title'];?></h4>
+                    <div class="name-author"><?php echo $album['author'];?></div>
+                    <div class="year-album"><?php echo $album['year'];?></div>
+                </div>
+            <?php } ?>
         </div>
     </body>
 </html>
