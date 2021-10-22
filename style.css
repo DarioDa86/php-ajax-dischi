@@ -5,6 +5,7 @@
 }
 body {
     background-color: #1E2D3B;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -30,36 +31,36 @@ header {
 }
 
 
-    .album {
+.album {
     width: calc(20% - 40px);
     margin: 10px 20px;
     background-color: #2E3A46;
     text-align: center;
     padding: 10px;
-    }
+}
 
-    .image-album {
-        width: 0 auto;
-        padding: 10px;
-    }
+.image-album {
+    width: 0 auto;
+    padding: 10px;
+}
 
-    .image-album img {
-        width: 100%;
-        object-fit: cover;
-    }
+.image-album img {
+    width: 100%;
+    object-fit: cover;
+}
 
-    .name-album {
-        color: #fff;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+.name-album {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
-    .name-author, .year-album {
-        color: gray
-    }
+.name-author, .year-album {
+    color: gray
+}
 
-    .year-album {
+.year-album {
 
-        margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
+}
