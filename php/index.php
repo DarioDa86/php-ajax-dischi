@@ -1,5 +1,5 @@
 <!-- importo il DataBase -->
-<?php include __DIR__ . "/database.php"; ?>
+<?php include __DIR__ . "/../database.php"; ?>
 <!-- /importo il DataBase -->
 
 
@@ -9,14 +9,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../style.css">
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- Google font -->
+
         <title>Dischi ma con Php</title>
         
     </head>
     <body>
         <header>
             <div class="logo-spotify">
-                <img src="./img/spotify-logo.png" alt="logo spotify">
+                <img src="../img/spotify-logo.png" alt="logo spotify">
             </div>
         </header>
 
