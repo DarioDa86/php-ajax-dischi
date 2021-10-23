@@ -1,5 +1,5 @@
 <!-- importo il DataBase -->
-<?php include __DIR__ . "/../database.php"; ?>
+<?php require __DIR__ . "/../database.php"; ?>
 <!-- /importo il DataBase -->
 
 

@@ -14,6 +14,15 @@
                 <div class="logo-spotify">
                     <img src="../img/spotify-logo.png" alt="logo spotify">
                 </div>
+                
+                <select name="genre" v-model="genreChosed" @change="whichGenre">
+                    <option value="All">All</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Metal">Metal</option>
+                </select>
+
             </header>
     
             <div class="container">

@@ -2,7 +2,8 @@ const viewDisks = new Vue({
 
     el: '#root',
     data: {
-        disks: null
+        disks: [],
+        genreChosed: ""
     },
     created() {
         axios.get('http://localhost/php-ajax-dischi/api/index.php')
@@ -12,6 +13,22 @@ const viewDisks = new Vue({
         .catch(function (error){
             console.log(error);
         })
+    },
+    methods: {
+        whichGenre() {
+            axios.get('http://localhost/php-ajax-dischi/api/index.php', {
+                params: {
+                    "genre": this.genreChosed
+                }
+            })
+                
+            .then((response) => {
+            this.disks = response.data;
+        })
+        .catch(function (error){
+            console.log(error);
+        })
+        }
     }
 
 });
