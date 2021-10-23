@@ -3,7 +3,7 @@ const viewDisks = new Vue({
     el: '#root',
     data: {
         disks: [],
-        genreChosed: ""
+        genreChosed: "All"
     },
     created() {
         axios.get('http://localhost/php-ajax-dischi/api/index.php')

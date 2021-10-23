@@ -11,6 +11,9 @@ body {
 header {
     background-color: #2E3A46;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .results {
@@ -63,4 +66,8 @@ header {
 .year-album {
 
     margin-bottom: 10px;
+}
+
+.select-genre {
+    margin-right: 20px;
 }
